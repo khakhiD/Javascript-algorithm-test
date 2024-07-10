@@ -1,5 +1,5 @@
 const fs = require('fs');
-let input = fs.readFileSync(0).toString().map(i => Number(i));
+let input = Number(fs.readFileSync(0).toString());
 
 console.log(input ** 2);
 
