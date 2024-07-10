@@ -4,4 +4,4 @@ const sum = input[0] + input[1] + input[2];
 
 
 console.log(sum);
-console.log((sum/input.length).toFixed(0));
+console.log(parseInt(sum/input.length));
