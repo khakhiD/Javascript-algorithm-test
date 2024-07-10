@@ -1,7 +1,7 @@
 const fs = require('fs');
-let input = fs.readFileSync(0).toString().map(i => Number(i));
+let input = Number(fs.readFileSync(0).toString().trim());
 
-console.log(input[0]);
+console.log(input);
 
 if (input < 0) {
     console.log('minus');
