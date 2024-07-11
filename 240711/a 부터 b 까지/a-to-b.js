@@ -13,7 +13,7 @@ const calcaulate = (number) => {
 let result = [];
 
 
-for (let i = a; i <= b; calcaulate(i)) {
+for (let i = a; i <= b; i = calcaulate(i)) {
     result.push(i);
 }
 
