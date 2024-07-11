@@ -3,6 +3,11 @@ let input = fs.readFileSync(0).toString().trim().split('\n').map(Number);
 
 const n = input[0];
 const array = input.slice(1, n);
-const result = array.filter(i => i % 3 === 0 && i % 2 !== 0);
 
-console.log(result.join('\n'));
+function isCondition (number) {
+    return number % 3 === 0 && number % 2 !== 0 ? true : false;
+}
+
+for (let i = 0; i < n; i++) {
+    if (isCondition(array[i])) console.log(array[i]);
+}
