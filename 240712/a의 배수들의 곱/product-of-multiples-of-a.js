@@ -5,7 +5,9 @@ const [a, b] = input;
 let result = 1;
 
 for (let i = 1; i <= b; i++) {
-    if (i % 4 === 0) result *= i;
+    if (i % a === 0) {
+        result *= i;
+    }
 }
 
 console.log(result);
