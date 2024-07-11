@@ -5,7 +5,7 @@ const [a, b] = input;
 let result = 1;
 
 for (let i = a; i <= b; i++) {
-    if (b % i === 0) result *= i;
+    if (a % i === 0) result *= i;
 }
 
 console.log(result);
