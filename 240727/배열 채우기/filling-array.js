@@ -2,12 +2,12 @@ const fs = require('fs');
 let arr = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 let number = [];
 
-arr.forEach((val) => {
-    if (val !== 0) {
-        number.push(val);
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+        number.push(arr[i]);
     } else {
-        return false;
+        break;
     }
-});
+}
 
 console.log(number.reverse().join(' '));
