@@ -1,11 +1,6 @@
 const fs = require('fs');
-let input = fs.readFileSync(0).toString().trim().split("\n").map(Number);
-let even = [];
+let input = fs.readFileSync(0).toString().trim().split("\n");
+let nums = input.slice(1).split(' ').map(Number);
+let result = nums.filter(i => i % 2 === 0).reverse().join(' ');
 
-input.slice(1).forEach(num => {
-    if (num % 2 === 0) {
-        even.push(num);
-    }
-})
-
-console.log(even.reverse().join(" "));
+console.log(result);
