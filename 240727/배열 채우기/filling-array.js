@@ -6,7 +6,7 @@ arr.forEach((val) => {
     if (val !== 0) {
         number.push(val);
     } else {
-        return;
+        return false;
     }
 });
 
