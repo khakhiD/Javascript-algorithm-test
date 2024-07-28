@@ -10,8 +10,8 @@ for (let i = n; i >= 1; i--) {
         str += '  ';
     }
 
-    for (let k = i; k >= 1; k--) {
-        str += `${k} `;
+    for (let j = i; j >= 1; j--) {
+        str += `${j} `;
     }
 
     console.log(str);
