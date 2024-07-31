@@ -13,8 +13,11 @@ for (let i = 0; i < n; i++) {
 
     for (let j = 0; j < n - i; j++) {
         line += String.fromCharCode(index) + ' ';
-        index++;
-        if (String.fromCharCode(index) > 'Z'.charCodeAt()) index = 'A'.charCodeAt();
+        if (String.fromCharCode(index) === 'Z') {
+            index = 'A'.charCodeAt();
+        } else {
+            index++;
+        }
     }
     
     console.log(line);
