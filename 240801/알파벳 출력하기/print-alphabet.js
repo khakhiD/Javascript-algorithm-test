@@ -10,7 +10,7 @@ for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= i; j++) {
         line += String.fromCharCode(index);
         
-        if (index > 'Z'.charCodeAt()) {
+        if (index === 'Z'.charCodeAt()) {
             index = 'A'.charCodeAt();
         } else {
             index++;
